@@ -20,32 +20,83 @@
             <div class="input-Container">
                 <input id="inputSearchContent" style="border-color:blue; outline-style: none; height: inherit; border-width:  0px;width: 350px; border-style: none; text-align: center;  margin: 10px; " placeholder="Enter the City" type="text" name="" >
                 <div id="searchIcon">    
-                    <i  class="fa-solid fa-magnifying-glass" style="color: rgb(27, 26, 26);"></i>
+                    <i  class="fa-solid fa-magnifying-glass"></i>
                 </div>    
             </div>
+            
             <div class="season-banner">
-                <img id="seasonImage" style="width: 250px; height: 250px; filter: drop-shadow(4px 4px 8px black);" class="season-img"
-                src="sunny.png" alt="">
+                <div class="settingTile">
+                        <h2 class="logo pt-4">Naru<span style="color: #FF603D;">Weather</span></h2>
+                        <div class="homeoptions">
+                            <div class="homestyle d-flex ">
+                                <i class="fa-solid fa-house p-1"></i>
+                                <h5>Home</h5>
+                                <i></i>
+                           </div>
+                            <div class="homestyle d-flex ">
+                                <i class="fa-solid fa-cloud-sun p-1"></i>
+                                <h5>Forecast</h5>
+                                <i></i>
+                            </div>
+                            <div class="homestyle d-flex ">
+                                <i class="fa-solid fa-magnifying-glass p-1"></i>
+                                <h5>Search</h5>
+                                <i></i>
+                            </div> 
+                            <hr style="color: white; ">
+                            <p style="position: relative;top: 250px;">"Let the breeze takeplace"</p>
+                        </div>
+                        
+                </div>
+                <h3 class="maintitle">Check the Sky <br><span style="color: orange;">SHINOBI</span></h3>
                 <div id="seasonContent" class="seoson-content-container">
-                    <h1 id="temp">26°C</h1>
-                    <h2 id="seasonText" class="season-text">Sunny</h2>
-                    <p style="font-style: italic;">"Good to go Outside and have fun"</p>
-                    <div class="humidity-wind-container">
-                        <div class="humidity">
-                            <img src="humidity.png" alt="">
-                            <div style="display: flex; flex-direction: column; ">
+                    <div class="locationtile d-flex justify-content-start">
+                        <i class="fa-solid fa-location-pin p-2" style="color: rgb(238, 164, 4);"></i>
+                        <p id="village" style="color: whitesmoke; font-size: 20px; padding-left: 2px;">Village</p>
+                    </div>
+                    <div class="temperatureTile d-flex justify-content-center">
+                        <img id="seasonImage" src="./Res/clear.png"  style="width: 180px;" alt="">
+                        <div>
+                            <h1 id="temp" style="font-size: 64px; color: whitesmoke;">26°C</h1>
+                            <h2 id="seasonText" style="color: whitesmoke;" class="season-text">Sunny | <span>30°C</span></h2>
+                        </div>
+                    </div>
+                    
+                    <p class="simpleQoute" style="font-style: italic;">"Good to go Outside and have fun"</p>
+                    <div class="endDetails">
+                        <div class="humidity-wind-container">
+                            <div>
+                                <div class="iconContainer">
+                                    <img width="40px" src="./Res/humidity.png" alt="">
+                                </div>
+                                <p style="margin: 0px;">Humidity</p>
                                 <h5 id="humidity">50%</h5>
-                                <p>Humidity</p>
                             </div>
-                        </div>
-                        <div class="humidity" >
-                            <img src="wind.png" alt="">
-                            <div style="display: flex; flex-direction: column; ">
-                                <h5 id="windSpeed">15km/h</h5>
-                                <p>Wind</p>
+                            <div>
+                                <div class="iconContainer">
+                                    <img width="40px" src="./Res/wind.png" alt="">
+                                </div>
+                                <p style="margin: 0px;">Wind</p>
+                                <h5 id="wind">112km</h5>
                             </div>
+                            <div>
+                                <div class="iconContainer">
+                                    <img width="40px" src="./Res/meter.png" alt="">
+                                </div>
+                                <p style="margin: 0px;">Pressure</p>
+                                <h5 id="pressure">50%</h5>
+                            </div>
+                            <div>
+                                <div class="iconContainer">
+                                    <img width="40px" src="./Res/visi.png" alt="">
+                                </div>
+                                <p style="margin: 0px;">Visibility</p>
+                                <h5 id="visibility">50%</h5>
+                            </div>
+                            
                         </div>
-                    </div>  
+                    </div>
+                      
                 </div>
                   
             </div>
